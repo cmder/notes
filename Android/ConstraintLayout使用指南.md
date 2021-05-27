@@ -1,0 +1,11 @@
+#### 官方文档
+
+https://developer.android.com/codelabs/constraint-layout#0
+
+ConstraintLayout试图解决的问题是改变以往只能通过手写XML布局来实现界面设计，其理念和RelativeLayout相似，都是借助View之间的相对位置关系来实现布局，但是比RelativeLayout进一层，View之间的相互关系更加复杂。
+
+使用ConstraintLayout最重要的是建立约束，一个View的约束可以相对于Parent、其他View、Group、Barrier、Guideline，通过这些来确定自己的位置。
+
+实现ConstraintLayout最方便的是使用Guideline，就是在界面上放几条水平和数值的线，在约束View的位置，Guideline如果想要使用百分比位置，直接点击三角形图标无效，修改一下XML文件中app:layout_constraintGuide_percent的值为0.5即可。
+
+其他用法与其他Layout类似。使用ConstraintLayout可以先在Design界面拖动控件，修改属性，再手动修改XML微调，这是优于其他Layout的地方。
