@@ -458,9 +458,15 @@ string和vector是两种最重要的标准库类型，前者支持可变长字�
 
 ### 3.1　命名空间的using声明
 
-
+头文件不应包含using声明
 
 ### 3.2　标准库类型string
+
+如果使用等号（=）初始化一个变量，实际上执行的是拷贝初始化（copy initialization），编译器把等号右侧的初始值拷贝到新创建的对象中去。与之相反，如果不使用等号，则执行的是直接初始化（direct initialization）。
+
+![img](https://res.weread.qq.com/wrepub/epub_33692196_243)
+
+对于size函数来说，返回一个int或者返回一个unsigned似乎都是合情合理的。但其实size函数返回的是一个string：：size_type类型的值
 
 ### 3.3　标准库类型vector
 
