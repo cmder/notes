@@ -509,8 +509,6 @@ vector对象（以及string对象）的下标运算符可用于访问已存在�
 访问成员：![img](https://res.weread.qq.com/wrepub/epub_33692196_328)
 
 
-
-
 虽然vector对象可以动态地增长，但是也会有一些副作用。已知的一个限制是不能在范围for循环中向vector对象添加元素。另外一个限制是任何一种可能改变vector对象容量的操作，比如push_back，都会使该vector对象的迭代器失效。
 
 谨记，但凡是使用了迭代器的循环体，都不要向迭代器所属的容器添加元素。
@@ -520,5 +518,7 @@ vector对象（以及string对象）的下标运算符可用于访问已存在�
 string和vector的迭代器提供了更多额外的运算符![img](https://res.weread.qq.com/wrepub/epub_33692196_332)
 
 ### 3.5　数组
+
+
 
 ### 3.6　多维数组
